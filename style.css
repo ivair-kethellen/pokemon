@@ -24,7 +24,8 @@ header h1{
 }
 #capa img{
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
+    min-height: 100px;
 }
 main{
     width: 100%;
@@ -98,9 +99,9 @@ main h1{
 
 }
 .photos img{
-    
     margin: 30px 10px;
-    width: calc((100%/3) - 10px);
+    max-width: 100%;
+    
     box-shadow: 4px 6px 12px 0px #838383d4
 }
 
