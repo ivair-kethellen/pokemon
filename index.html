@@ -23,6 +23,21 @@
             let box = document.getElementById('musica');
             box.style.display='none';
         }
+        function soundsPokemons(sound){
+            let sound1= document.getElementById('sound1');
+            let sound2= document.getElementById('sound2');
+            let sound3= document.getElementById('sound3');
+            switch (sound){
+                case 1:
+                    sound1.play();
+                    break;
+                case 2:
+                    sound2.play();
+                    break;
+                default:
+                    sound3.play();
+                }
+        }
     </script>
 </head>
 <body onLoad="setTimeout(carregar, 1500);">
@@ -53,8 +68,12 @@
         </article>
         <section class="area cards">
             <div class="card card-sombra">
+                <!-- SONS POKEMONS -->
+                <audio src="bulbasaur.mp3" id="sound1"></audio>
+                <audio src="chamander.mp3" id="sound2"></audio>
+                <audio src="pikachu.mp3" id="sound3"></audio>
                 <h2>#001 - Bulbassauro</h2>
-                <img src="img/Bulbasaur.png" alt="Pokémon Bulbassauro">
+                <img src="img/Bulbasaur.png" alt="Pokémon Bulbassauro" onmouseover="soundsPokemons(1);" onclick="soundsPokemons(1);">
                 <div class="informacoes">
                     <ul>
                         <li>Região: Kanto</li>
@@ -65,7 +84,7 @@
             </div>
             <div class="card card-sombra">
                 <h2>#004 - Chamander</h2>
-                <img src="img/Charmander.png" alt="Pokémon Chamander">
+                <img src="img/Charmander.png" alt="Pokémon Chamander" onmouseover="soundsPokemons(2);" onclick="soundsPokemons(2);">
                 <div class="informacoes">
                     <ul>
                         <li>Região: Kanto</li>
@@ -76,7 +95,7 @@
             </div>
             <div class="card card-sombra">
                 <h2>#025 - Pkachu</h2>
-                <img src="img/pikachu.png" alt="Pokémon">
+                <img src="img/pikachu.png" alt="Pokémon" onmouseover="soundsPokemons(3);" onclick="soundsPokemons(3);">
             
             <div class="informacoes">
                 <ul>
